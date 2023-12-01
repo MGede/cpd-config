@@ -49,11 +49,12 @@ cos:
   plan: standard
   location: global
 
+
 openshift:
 - name: "{{ env_id }}"
-  ocp_version: 4.12.13 # it is necessary to specify minor version because cloudpak deployer turns 4.10 into 4.1 otherwise :-( 
+  ocp_version: 4.8
   compute_flavour: bx2.16x64
-  compute_nodes: 6
+  compute_nodes: 3
   infrastructure:
     type: vpc
     vpc_name: "{{ env_id }}"
@@ -62,9 +63,13 @@ openshift:
     - "{{ env_id }}-subnet-zone-2"
     - "{{ env_id }}-subnet-zone-3"
     cos_name: "{{ env_id }}-cos"
-    secondary_storage: 900gb.5iops-tier
+  mcg:
+    install: False
+    storage_type: storage-class
+    storage_class: not-specified
   openshift_storage:
   - storage_name: ocs-storage
     storage_type: ocs
     ocs_storage_label: ocs
     ocs_storage_size_gb: 500
+    ocs_version: 4.8.0
