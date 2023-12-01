@@ -251,12 +251,12 @@ cp4d:
   - name: wkc
     description: Watson Knowledge Catalog
     size: small
-    state: removed
+    state: installed
     installation_options:
       install_wkc_core_only: False
-      enableKnowledgeGraph: False
-      enableDataQuality: False
-      enableFactSheet: False
+      enableKnowledgeGraph: True
+      enableDataQuality: True
+      enableFactSheet: True
 
   - name: wml
     description: Watson Machine Learning
