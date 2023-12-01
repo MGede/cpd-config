@@ -29,7 +29,7 @@ cp4d:
 # installed.
 #
 
- - name: analyticsengine 
+  - name: analyticsengine 
     description: Analytics Engine Powered by Apache Spark 
     size: small 
     state: removed
