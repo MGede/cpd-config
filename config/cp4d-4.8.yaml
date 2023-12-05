@@ -255,7 +255,7 @@ cp4d:
     installation_options:
       install_wkc_core_only: False
       enableKnowledgeGraph: False
-      enableDataQuality: True
+      enableDataQuality: False
       enableFactSheet: False
       
   - name: wml
