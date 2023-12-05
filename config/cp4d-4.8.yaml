@@ -254,10 +254,10 @@ cp4d:
     state: installed
     installation_options:
       install_wkc_core_only: False
-      enableKnowledgeGraph: True
+      enableKnowledgeGraph: False
       enableDataQuality: True
-      enableFactSheet: True
-
+      enableFactSheet: False
+      
   - name: wml
     description: Watson Machine Learning
     size: small
