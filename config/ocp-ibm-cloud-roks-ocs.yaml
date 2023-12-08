@@ -4,6 +4,7 @@ global_config:
   cloud_platform: ibm-cloud
   ibm_cloud_region: eu-de
   env_id: cp4d-abb 
+  confirm_destroy: True
 
 provider:
 - name: ibm
