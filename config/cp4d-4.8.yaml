@@ -119,7 +119,7 @@ cp4d:
     description: Data Virtualization
     size: small 
     instances:
-    - name: data-virtualization
+    - name: virtualization
     state: installed
 
   # Please note that for EDB Postgress, a secret edb-postgres-license-key must be created in the vault
