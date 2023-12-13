@@ -53,7 +53,7 @@ cos:
 
 openshift:
 - name: "{{ env_id }}"
-  ocp_version: 4.12_openshift
+  ocp_version: 4.12_23 
   compute_flavour: bx2.16x64
   compute_nodes: 6
   infrastructure:
