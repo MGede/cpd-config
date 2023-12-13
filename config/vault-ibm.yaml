@@ -1,0 +1,5 @@
+---
+vault:
+  vault_type: ibmcloud-vault
+  vault_authentication_type: api-key
+  vault_url: https://d2abadd9-a9b7-464e-baa6-65ac60b1f792.au-syd.secrets-manager.appdomain.cloud
